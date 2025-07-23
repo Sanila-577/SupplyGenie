@@ -1,6 +1,6 @@
 # SupplyGenie - AI-Powered Supply Chain Management Platform
 
-![SupplyGenie Logo](supplygenie-metamorphs-idealize-frontend/supplygenie-frontend/public/logo.png)
+![SupplyGenie Logo](logo.png)
 
 ## Overview
 
