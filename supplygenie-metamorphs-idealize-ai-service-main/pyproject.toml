@@ -1,0 +1,28 @@
+[project]
+name = "supply-genie-create-supply-chain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.13",
+    "email-validator==2.1.1",
+    "httpx>=0.28.1",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.26",
+    "langchain-openai>=0.3.26",
+    "langchain-tavily>=0.2.4",
+    "langgraph>=0.4.10",
+    "loguru>=0.7.3",
+    "motor>=3.7.1",
+    "openai>=1.91.0",
+    "pydantic>=2.11.7",
+    "pymongo>=4.13.2",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+    "python-dotenv>=1.1.1",
+    "tavily-python>=0.7.8",
+    "tenacity>=9.1.2",
+    "typing-extensions>=4.14.0",
+    "uvicorn>=0.34.3",
+]

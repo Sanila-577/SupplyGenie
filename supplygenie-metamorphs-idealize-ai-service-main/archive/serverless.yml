@@ -1,0 +1,59 @@
+service: supply-genie-api
+
+frameworkVersion: "4"
+
+provider:
+  name: aws
+  runtime: python3.12
+  region: us-east-1
+  memorySize: 256
+  architecture: x86_64
+  timeout: 300
+  environment:
+    OPENAI_API_KEY: ${env:OPENAI_API_KEY}
+    TAVILY_API_KEY: ${env:TAVILY_API_KEY}
+    MONGO_URI: ${env:MONGO_URI}
+    MODEL_NAME: ${env:MODEL_NAME}
+
+plugins:
+  - serverless-uv-requirements
+  - serverless-python-requirements
+  - serverless-offline
+
+custom:
+  uv:
+    mode: compile
+    source: pyproject.toml
+    output: requirements.txt
+  pythonRequirements:
+    slim: false
+    strip: false
+    dockerizePip: false
+  serverless-offline:
+    httpPort: 3000
+    host: localhost
+
+functions:
+  api:
+    handler: src.main.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true
+      - http:
+          path: /
+          method: ANY
+          cors: true
+
+package:
+  patterns:
+    - 'src/**'
+    - 'requirements.txt'
+    - '!**/__pycache__/**'
+    - '!**/*.pyc'
+    - '!.venv/**'
+    - '!node_modules/**'
+    - '!.ruff_cache/**'
+    - '!archive/**'
+    - '!notebooks/**'

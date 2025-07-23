@@ -1,0 +1,19 @@
+# requirements-minimal.txt - For testing
+fastapi==0.115.14
+uvicorn==0.35.0
+pydantic==2.11.7
+python-dotenv==1.1.1
+loguru==0.7.3
+
+# Core LangChain (add these one by one)
+langchain-core==0.3.66
+langchain==0.3.26
+langchain-openai==0.3.26
+langchain-tavily==0.2.5
+langgraph>=0.5.0
+
+# Database
+pymongo==4.13.2
+
+# HTTP client
+httpx==0.28.1

@@ -1,0 +1,32 @@
+{
+  "name": "supply-genie-create-supply-chain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serverless offline --stage dev",
+    "start": "serverless offline start --stage dev --host 0.0.0.0",
+    "deploy": "serverless deploy --stage dev",
+    "remove": "serverless remove --stage dev",
+    "info": "serverless info --stage dev",
+    "logs": "serverless logs -f api --stage dev",
+    "logs:tail": "serverless logs -f api --stage dev --tail",
+    "package": "serverless package --stage dev",
+    "invoke": "serverless invoke -f api --stage dev",
+    "invoke:local": "serverless invoke local -f api"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "serverless": "^4.17.1",
+    "serverless-offline": "^14.4.0",
+    "serverless-python-requirements": "^6.1.2",
+    "serverless-uv-requirements": "^1.1.0"
+  }
+}
+    "serverless": "^4.17.1",
+    "serverless-offline": "^14.4.0",
+    "serverless-python-requirements": "^6.1.2",
+    "serverless-uv-requirements": "^1.1.0"
+  }
+}
