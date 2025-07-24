@@ -1,7 +1,5 @@
 # SupplyGenie - AI-Powered Supply Chain Management Platform
 
-![SupplyGenie Logo](logo.png)
-
 ## Overview
 
 SupplyGenie is a comprehensive AI-powered supply chain management platform that helps businesses discover, evaluate, and connect with reliable suppliers based on their exact requirements. The platform consists of two main components:
