@@ -6,7 +6,7 @@ Live App: https://supplygenie-metamorphs-idealize-fro-six.vercel.app/
 
 SupplyGenie is a comprehensive AI-powered supply chain management platform that helps businesses discover, evaluate, and connect with reliable suppliers based on their exact requirements. The platform consists of two main components:
 
-1. **AI Service**: A FastAPI-based backend with intelligent supplier discovery using LangChain and MongoDB
+1. **AI Service**: Built with **FastAPI**, this backend service features an intelligent supplier discovery agent powered by **LangGraph** for dynamic decision-making and **MongoDB** for scalable data storage.
 2. **Frontend**: A modern Next.js 15 web application with an interactive chat interface
 
 ## 🏗️ Architecture
