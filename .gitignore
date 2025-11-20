@@ -1,1 +1,4 @@
 .DS_Store
+*.ts linguist-detectable=false
+*.d.ts linguist-detectable=false
+node_modules/* linguist-vendored
